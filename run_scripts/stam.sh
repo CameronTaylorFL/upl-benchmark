@@ -1,6 +1,6 @@
 #! bin/bash
 
-python main.py log=stam/blurred/seed1 model=stam dataset=imagenet40-long scenario=incremental seed=1 \
+python main.py log=stam/incremental/seed$1 model=stam dataset=imagenet40-long scenario=incremental seed=$1 \
     scenario.eval_freq=4 plot=False dataset.t0_bs=1 \
     dataset.super_size=100 dataset.test_size=100 dataset.stream_size=1000 dataset.t0_factor=0.5 \
     model.layers.layer0.delta=1200 model.layers.layer1.delta=800 model.layers.layer2.delta=400 \

@@ -1,7 +1,7 @@
 #! bin/bash 
 
 
-python3 main.py log=pcmc/$1 model=pcmc dataset=imagenet40-long scenario=incremental seed=$2 \
+python3 main.py log=pcmc/incremental/seed$1 model=pcmc dataset=imagenet40-long scenario=incremental seed=$1 \
         model.arch=resnet18 model.layers.layer0.feat_size=512 \
         load_pretrain=True pretrain_log=pcmc//seed1 model.encoder_type=simclr model.sleep_on=True model.pretrained=False \
         scenario.eval_freq=4 model.mem_update=reduce_mem model.update_use=1 model.init_epochs=2 plot=True \

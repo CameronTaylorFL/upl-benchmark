@@ -1,0 +1,15 @@
+experiments/
+datasets
+*.pyc
+__pycache__
+logs/
+.neptune/
+outputs
+*.ipynb
+*.tar
+*.png
+*.out
+logs-longterm
+*.pkl
+results_pickle
+*.npy
