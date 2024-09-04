@@ -1,0 +1,155 @@
+name: food-101
+img_size: 120
+channels: 3
+t0_bs: 128
+
+task_objects: None
+
+task_sizes: [10, 2, 2, 2, 
+             2, 2, 2, 2, 
+             2, 2, 2, 2, 
+             2, 2, 2, 2]
+
+num_tasks: 16
+num_classes: 40
+
+stream_size: 750
+test_size: 100
+super_size: 100
+stream_bs: 1
+
+t0_size: 10
+t0_factor: 1.0
+
+mean: [0.485, 0.456, 0.406]
+std: [0.229, 0.224, 0.225]
+
+
+
+task_order: [
+      [ApplePie, BabyBackRibs,
+       Baklava, BeefCarpaccio,
+       BeefTartare, BeetSalad,
+       Beignets, Bibimbap,
+       BreadPudding, BreakfastBurrito],
+       [Bruschetta, CaesarSalad],
+       [Cannoli, CapreseSalad],
+       [CarrotCake, Ceviche],
+       [CheesePlate, Cheesecake],
+       [ChickenCurry, ChickenQuesadilla],
+       [ChickenWings, ChocolateCake],
+       [ChocolateMousse, Churros],
+       [ClamChowder, ClubSandwich],
+       [CrabCakes, CremeBrulee],
+       [CroqueMadame, CupCakes],
+       [DeviledEggs, Donuts],
+       [Dumplings, Edamame],
+       [EggsBenedict, Escargots],
+       [Falafel, FiletMignon],
+       [FishAndChips, FrenchOnionSoup],
+
+]
+
+task_classes: {
+      'apple_pie': 'ApplePie',
+      'baby_back_ribs': 'BabyBackRibs',
+      'baklava': 'Baklava',
+      'beef_carpaccio': 'BeefCarpaccio',
+      'beef_tartare': 'BeefTartare',
+      'beet_salad': 'BeetSalad',
+      'beignets': 'Beignets',
+      'bibimbap': 'Bibimbap',
+      'bread_pudding': 'BreadPudding',
+      'breakfast_burrito': 'BreakfastBurrito',
+      'bruschetta': 'Bruschetta',
+      'caesar_salad': 'CaesarSalad',
+      'cannoli': 'Cannoli',
+      'caprese_salad': 'CapreseSalad',
+      'carrot_cake': 'CarrotCake',
+      'ceviche': 'Ceviche',
+      'cheese_plate': 'CheesePlate',
+      'cheesecake': 'Cheesecake',
+      'chicken_curry': 'ChickenCurry',
+      'chicken_quesadilla': 'ChickenQuesadilla',
+      'chicken_wings': 'ChickenWings',
+      'chocolate_cake': 'ChocolateCake',
+      'chocolate_mousse': 'ChocolateMousse',
+      'churros': 'Churros',
+      'clam_chowder': 'ClamChowder',
+      'club_sandwich': 'ClubSandwich',
+      'crab_cakes': 'CrabCakes',
+      'creme_brulee': 'CremeBrulee',
+      'croque_madame': 'CroqueMadame',
+      'cup_cakes': 'CupCakes',
+      'deviled_eggs': 'DeviledEggs',
+      'donuts': 'Donuts',
+      'dumplings': 'Dumplings',
+      'edamame': 'Edamame',
+      'eggs_benedict': 'EggsBenedict',
+      'escargots': 'Escargots',
+      'falafel': 'Falafel',
+      'filet_mignon': 'FiletMignon',
+      'fish_and_chips': 'FishAndChips',
+      'foie_gras': 'FoieGras',
+      'french_fries': 'FrenchFries',
+      'french_onion_soup': 'FrenchOnionSoup',
+      'french_toast': 'FrenchToast',
+      'fried_calamari': 'FriedCalamari',
+      'fried_rice': 'FriedRice',
+      'frozen_yogurt': 'FrozenYogurt',
+      'garlic_bread': 'GarlicBread',
+      'gnocchi': 'Gnocchi',
+      'greek_salad': 'GreekSalad',
+      'grilled_cheese_sandwich': 'GrilledCheeseSandwich',
+      'grilled_salmon': 'GrilledSalmon',
+      'guacamole': 'Guacamole',
+      'gyoza': 'Gyoza',
+      'hamburger': 'Hamburger',
+      'hot_and_sour_soup': 'HotAndSourSoup',
+      'hot_dog': 'HotDog',
+      'huevos_rancheros': 'HuevosRancheros',
+      'hummus': 'Hummus',
+      'ice_cream': 'IceCream',
+      'lasagna': 'Lasagna',
+      'lobster_bisque': 'LobsterBisque',
+      'lobster_roll_sandwich': 'LobsterRollSandwich',
+      'macaroni_and_cheese': 'MacaroniAndCheese',
+      'macarons': 'Macarons',
+      'miso_soup': 'MisoSoup',
+      'mussels': 'Mussels',
+      'nachos': 'Nachos',
+      'omelette': 'Omelette',
+      'onion_rings': 'OnionRings',
+      'oysters': 'Oysters',
+      'pad_thai': 'PadThai',
+      'paella': 'Paella',
+      'pancakes': 'Pancakes',
+      'panna_cotta': 'PannaCotta',
+      'peking_duck': 'PekingDuck',
+      'pho': 'Pho',
+      'pizza': 'Pizza',
+      'pork_chop': 'PorkChop',
+      'poutine': 'Poutine',
+      'prime_rib': 'PrimeRib',
+      'pulled_pork_sandwich': 'PulledPorkSandwich',
+      'ramen': 'Ramen',
+      'ravioli': 'Ravioli',
+      'red_velvet_cake': 'RedVelvetCake',
+      'risotto': 'Risotto',
+      'samosa': 'Samosa',
+      'sashimi': 'Sashimi',
+      'scallops': 'Scallops',
+      'seaweed_salad': 'SeaweedSalad',
+      'shrimp_and_grits': 'ShrimpAndGrits',
+      'spaghetti_bolognese': 'SpaghettiBolognese',
+      'spaghetti_carbonara': 'SpaghettiCarbonara',
+      'spring_rolls': 'SpringRolls',
+      'steak': 'Steak',
+      'strawberry_shortcake': 'StrawberryShortcake',
+      'sushi': 'Sushi',
+      'tacos': 'Tacos',
+      'takoyaki': 'Takoyaki',
+      'tiramisu': 'Tiramisu',
+      'tuna_tartare': 'TunaTartare',
+      'waffles': 'Waffles'
+}

@@ -1,0 +1,8 @@
+
+name: dynamic
+
+eval_freq: 500
+
+# Evaluation
+tasks: ['classification', 'clustering']
+

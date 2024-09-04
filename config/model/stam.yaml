@@ -1,0 +1,58 @@
+name: stam
+
+num_layers: 3
+rho: 0.35
+
+init_epochs: 1
+
+layers: 
+  layer0:
+    name: L0
+    ch: 3
+    patch_size: 25
+    stride: 15
+
+    alpha: 0.1
+    ltm_alpha: 0.0
+    beta: 0.95
+    theta: 30
+    delta: 1000
+    rho: 0.35
+
+    normalize:
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+
+  layer1:
+    name: L1
+    ch: 3
+    patch_size: 40
+    stride: 20
+
+    alpha: 0.1
+    ltm_alpha: 0.0
+    beta: 0.95
+    theta: 30
+    delta: 1000
+    rho: 0.35
+
+    normalize:
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+
+  layer2:
+    name: L2
+    ch: 3
+    patch_size: 60
+    stride: 40
+
+    alpha: 0.1
+    ltm_alpha: 0.0
+    beta: 0.95
+    theta: 30
+    delta: 1000
+    rho: 0.35
+
+    normalize:
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]

@@ -1,0 +1,102 @@
+name: awa
+img_size: 120
+channels: 3
+t0_bs: 128
+
+task_objects: None
+
+task_sizes: [10, 2, 2, 2, 
+             2, 2, 2, 2, 
+             2, 2, 2, 2, 
+             2, 2, 2, 2]
+
+num_tasks: 16
+num_classes: 40
+
+stream_size: 1000
+test_size: 100
+super_size: 100
+stream_bs: 1
+
+t0_size: 10
+t0_factor: 1.0
+
+mean: [0.485, 0.456, 0.406]
+std: [0.229, 0.224, 0.225]
+
+
+task_order: [
+              ['Antelope', 'Bat', 'Beaver', 
+               'Blue-Whale', 'Bobcat', 'Buffalo', 
+               'Chihuahua', 'Chimpanzee', 'Collie', 
+               'Cow'], 
+              ['Dalmatian', 'Deer'],
+              ['Dolphin', 'Elephant'], 
+              ['Fox', 'German-Shepherd'], 
+              ['Giant-Panda', 'Giraffe'], 
+              ['Gorilla', 'Grizzly-Bear'], 
+              ['Hamster', 'Hippopotamus'], 
+              ['Horse', 'Humpback-Whale'],
+              ['Killer-Whale', 'Leopard'], 
+              ['Lion', 'Mole'],
+              ['Moose', 'Mouse'],
+              ['Otter', 'Ox'],
+              ['Persian-Cat', 'Pig'],
+              ['Polar-Bear', 'Rabbit'],
+              ['Raccoon', 'Rat'],
+              ['Rhinoceros', 'Seal']
+            ]
+
+
+task_classes: {'antelope': 'Antelope',
+               'bat': 'Bat', 
+               'beaver': 'Beaver',
+               'blue+whale': 'Blue-Whale', 
+               'bobcat': 'Bobcat',
+               'buffalo': 'Buffalo',
+               'chihuahua': 'Chihuahua', 
+               'chimpanzee': 'Chimpanzee',
+               'collie': 'Collie',
+               'cow': 'Cow',
+               'dalmatian': 'Dalmatian',
+               'deer': 'Deer',
+               'dolphin': 'Dolphin',
+               'elephant': 'Elephant',
+               'fox': 'Fox',
+               'german+shepherd': 'German-Shepherd',
+               'giant+panda': 'Giant-Panda',
+               'giraffe': 'Giraffe',
+               'gorilla': 'Gorilla',
+               'grizzly+bear': 'Grizzly-Bear',
+               'hamster': 'Hamster',
+               'hippopotamus': 'Hippopotamus',
+               'horse': 'Horse',
+               'humpback+whale': 'Humpback-Whale',
+               'killer+whale': 'Killer-Whale',
+               'leopard': 'Leopard',
+               'lion': 'Lion',
+               'mole': 'Mole',
+               'moose': 'Moose',
+               'mouse': 'Mouse',
+               'otter': 'Otter',
+               'ox': 'Ox',
+               'persian+cat': 'Persian-Cat',
+               'pig': 'Pig',
+               'polar+bear': 'Polar-Bear',
+               'rabbit': 'Rabbit',
+               'raccoon': 'Raccoon',
+               'rat': 'Rat',
+               'rhinoceros': 'Rhinoceros',
+               'seal': 'Seal',
+               'sheep': 'Sheep',
+               'siamese+cat': 'Siamese-Cat',
+               'skunk': 'Skunk',
+               'spider+monkey': 'Spider-Monkey',
+               'squirrel': 'Squirrel',
+               'tiger': 'Tiger',
+               'walrus': 'Walrus',
+               'weasel': 'Weasel',
+               'wolf': 'Wolf',
+               'zebra': 'Zebra',
+               }
+

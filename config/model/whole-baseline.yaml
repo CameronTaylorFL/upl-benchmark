@@ -1,0 +1,26 @@
+name: whole-baseline
+n_workers: 12
+stream_train: True
+load_pretrain: True
+pretrained: False
+arch: resnet18
+feat_size: 512
+
+bs: 256
+init_epochs: 300
+sleep_epochs: 300
+lr: 0.6
+momentum: 0.9
+wd: 0.0001
+stm_size: 500
+ltm_size: 500
+init_size: 3000
+sleep_freq: 8
+
+k_scale: 2
+
+temp: 0.5
+
+
+
+

@@ -1,0 +1,11 @@
+name: pca
+n_workers: 12
+stream_train: True
+load_pretrain: True
+
+pretrained: True
+
+k_scale: 2
+
+components: 100
+

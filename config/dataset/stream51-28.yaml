@@ -1,0 +1,86 @@
+name: stream51-28
+img_size: 120
+channels: 3
+t0_bs: 128
+random: True
+
+num_tasks: 5
+num_classes: 28
+stream_bs: 1
+
+t0_size: 12
+
+stream_size: 1000
+test_size: 50
+super_size: 100
+
+mean: [0.485, 0.456, 0.406]
+std: [0.229, 0.224, 0.225]
+
+task_sizes: [12, 4, 4, 4, 4]
+
+task_order: [
+              ['Bear', 'Squirrel', 'Deer', 
+               'Rabbit', 'Fox', 'Bison', 
+               'Horse', 'Zebra', 'Monkey', 
+               'Cattle', 'Swine', 'Goat'],
+              ['Tank', 'Warplane', 'Train', 'Helicopter'], 
+              ['Lizard', 'Spider', 'Snake', 'Crab'], 
+              ['Ambulance', 'Bus', 'Truck', 'Motorcycle'],
+              ['Whale', 'Shark', 'Seal', 'Penguin'],
+            ]
+
+
+task_classes: {'1-train': 'Train',
+               '2-elephant': 'Elephant', 
+               '3-monkey': 'Monkey',
+               '4-horse': 'Horse', 
+               '5-zebra': 'Zebra',
+               '6-turtle': 'Turtle',
+               '7-bear': 'Bear', 
+               '8-cattle': 'Cattle',
+               '9-lizard': 'Lizard',
+               '10-bus': 'Bus',
+               '11-lion': 'Lion',
+               '12-rabbit': 'Rabbit',
+               '13-squirrel': 'Squirrel',
+               '14-fox': 'Fox',
+               '15-motorcycle': 'Motorcycle',
+               '16-tank': 'Tank',
+               '17-truck': 'Truck',
+               '18-domestic-cat': 'Domestic-Cat',
+               '19-tiger': 'Tiger',
+               '20-watercraft': 'Watercraft',
+               '21-spider': 'Spider',
+               '22-deer': 'Deer',
+               '23-goldfish': 'Goldfish',
+               '24-whale': 'Whale',
+               '25-gorilla': 'Gorilla',
+               '26-giraffe': 'Giraffe',
+               '27-redpanda': 'Red-Panda',
+               '28-kangaroo': 'Kangaroo',
+               '29-snake': 'Snake',
+               '30-shark': 'Shark',
+               '31-swine': 'Swine',
+               '32-crab': 'Crab',
+               '33-crocodile': 'Crocodile',
+               '34-warplane': 'Warplane',
+               '35-mountain-bike': 'Mountain-Bike',
+               '36-armadillo': 'Armadillo',
+               '37-irish-terrier': 'Irish-Terrier',
+               '38-space-shuttle': 'Space-Shuttle',
+               '39-goat': 'Goat',
+               '40-ambulance': 'Ambulance',
+               '41-llama': 'Llama',
+               '42-rhinoceros': 'Rhinceros',
+               '43-giant-panda': 'Giant-Panda',
+               '44-camel': 'Camel',
+               '45-wombat': 'Wombat',
+               '46-koala': 'Koala',
+               '47-standard-poodle': 'Standard-Poodle',
+               '48-seal': 'Seal',
+               '49-helicopter': 'Helicopter',
+               '50-bison': 'Bison',
+               '51-penguin': 'Penguin'
+               }
+

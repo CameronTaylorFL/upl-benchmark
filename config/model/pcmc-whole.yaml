@@ -1,0 +1,64 @@
+
+name: pcmc-whole
+cluster_alg: kmeans
+num_layers: 1
+mem_update: no-reset
+update_use: 1
+sleep_on: True
+encoder_type: simclr
+
+init_epochs: 300
+
+sleep_start: 3000
+sleep_freq: 4000
+
+pretrained: False
+pretrain_only: False
+
+n_workers: 14
+
+layers: 
+  layer0:
+    name: L0
+    ch: 3
+    feat_size: 512
+    patch_size: 120
+    stride: 1
+
+    pretrain_only: 0
+    pretrain_bs: 256
+    init_sample_factor: 1.0
+    init_epochs: 500
+    init_clusters: 500
+    lr: 0.6
+    wd: 1e-5
+
+    sleep_epochs: 200
+    sleep_bs: 512
+
+    alpha: 0.1
+    ltm_alpha: 0.0
+    beta: 0.99
+    theta: 20
+    delta: 100
+    M: 5
+    forgetting_factor: 3
+    rho: 0.25
+    
+    temperature: 0.5
+    cj: 0.8
+    cj_b: 0.6
+    cj_c: 0.6
+    cj_s: 0.6
+    cj_h: 0.2
+    hf: 0.5
+    vf: 0.0
+    gs: 0.2
+    gb: 0.2
+    kn: 5
+    sigma1: 0.1
+    sigma2: 2.0
+    rot: 0
+    re: 0.0 
+    crop_min: 0.3
+    crop_max: 1.0

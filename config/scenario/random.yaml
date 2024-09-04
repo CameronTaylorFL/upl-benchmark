@@ -1,0 +1,7 @@
+name: random
+t0_bs: 128
+
+eval_freq: 1000
+
+
+tasks: ['classification', 'clustering']

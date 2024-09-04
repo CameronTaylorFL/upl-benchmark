@@ -1,0 +1,126 @@
+name: imagenet40-long
+img_size: 120
+channels: 3
+t0_bs: 128
+
+task_objects: None
+
+task_sizes: [10, 2, 2, 2, 
+             2, 2, 2, 2, 
+             2, 2, 2, 2, 
+             2, 2, 2, 2]
+
+num_tasks: 16
+num_classes: 40
+
+stream_size: 1000
+test_size: 100
+super_size: 100
+stream_bs: 1
+
+t0_size: 10
+t0_factor: 1.0
+
+mean: [0.485, 0.456, 0.406]
+std: [0.229, 0.224, 0.225]
+
+task_order: [
+              ['Goldfish', 'Broccoli', 
+              'InternetWebsite', 'BaldEagle', 
+              'Corn', 'Husky', 
+              'Chettah', 'Ladybug', 
+              'Revolver', 'Elephant'], 
+              ['RedPanda', 'Tiger'], 
+              ['GreenTreeFrog', 'Ant'], 
+              ['PoliceVan', 'Airplane'], 
+              ['Ambulance', 'BlackSwan'], 
+              ['Model-T', 'MonarchButterfly'], 
+              ['Orange', 'FireTruck'], 
+              ['Kayak', 'Strawberry'], 
+              ['MouseTrap', 'Lemon'], 
+              ['Padlock', 'RemoteControl'], 
+              ['Zebra', 'SlotMachine'], 
+              ['Toucan', 'TeddyBear'], 
+              ['Cock', 'Daisy'], 
+              ['Odometer', 'SchoolBus'], 
+              ['Flamingo', 'GreatWhiteShark'], 
+              ['Jack-o-Lantern', 'BlackWidow']
+            ]
+
+#task_order: [
+#              ['Goldfish', 'Broccoli', 'InternetWebsite', 'BaldEagle', 'Corn', 'Husky', 'Chettah', 'Ladybug', 'Revolver', 'Elephant', 
+#              'RedPanda', 'Tiger', 
+#              'GreenTreeFrog', 'Ant', 
+#              'PoliceVan', 'Airplane', 
+#              'Ambulance', 'BlackSwan', 
+#              'Model-T', 'MonarchButterfly', 
+#              'Orange', 'FireTruck', 
+#              'Kayak', 'Strawberry', 
+#              'MouseTrap', 'Lemon', 
+#              'Padlock', 'RemoteControl', 
+#              'Zebra', 'SlotMachine', 
+#              'Toucan', 'TeddyBear', 
+#              'Cock', 'Daisy', 
+#              'Odometer', 'SchoolBus', 
+#              'Flamingo', 'GreatWhiteShark', 
+#              'Jack-o-Lantern', 'BlackWidow'],
+#              ['RedPanda', 'Tiger'], 
+#              ['GreenTreeFrog', 'Ant'], 
+#              ['PoliceVan', 'Airplane'], 
+#              ['Ambulance', 'BlackSwan'], 
+#              ['Model-T', 'MonarchButterfly'], 
+#              ['Orange', 'FireTruck'], 
+#              ['Kayak', 'Strawberry'], 
+#              ['MouseTrap', 'Lemon'], 
+#              ['Padlock', 'RemoteControl'], 
+#              ['Zebra', 'SlotMachine'], 
+#              ['Toucan', 'TeddyBear'], 
+#              ['Cock', 'Daisy'], 
+#              ['Odometer', 'SchoolBus'], 
+#              ['Flamingo', 'GreatWhiteShark'], 
+#              ['Jack-o-Lantern', 'BlackWidow']
+#            ]
+
+task_classes: {
+                'n01443537' : 'Goldfish',
+                'n01484850' : 'GreatWhiteShark',
+                'n01514668' : 'Cock',
+                'n01614925' : 'BaldEagle',
+                'n01644373' : 'GreenTreeFrog',
+                'n01773797' : 'BlackWidow',
+                'n01843383' : 'Toucan',
+                'n01860187' : 'BlackSwan',
+                'n02007558' : 'Flamingo',
+                'n02109961' : 'Husky',
+                'n02130308' : 'Chettah',
+                'n02165456' : 'Ladybug',
+                'n02391049' : 'Zebra',
+                'n02504458' : 'Elephant',
+                'n02509815' : 'RedPanda',
+                'n02129604' : 'Tiger',
+                'n02219486' : 'Ant',
+                'n02276258' : 'MonarchButterfly',
+                'n02690373' : 'Airplane',
+                'n02701002' : 'Ambulance',
+                'n03345487' : 'FireTruck',
+                'n03777568' : 'Model-T',
+                'n03977966' : 'PoliceVan',
+                'n04146614' : 'SchoolBus',
+                'n02951358' : 'Kayak',
+                'n03590841' : 'Jack-o-Lantern',
+                'n03794056' : 'MouseTrap',
+                'n03841143' : 'Odometer',
+                'n03874599' : 'Padlock',
+                'n04074963' : 'RemoteControl',
+                'n04086273' : 'Revolver',
+                'n04243546' : 'SlotMachine',
+                'n04399382' : 'TeddyBear',
+                'n06359193' : 'InternetWebsite',
+                'n11939491' : 'Daisy',
+                'n07714990' : 'Broccoli',
+                'n07745940' : 'Strawberry',
+                'n07749582' : 'Lemon',
+                'n07747607' : 'Orange',
+                'n13133613' : 'Corn',
+              }
+

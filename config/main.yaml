@@ -1,0 +1,16 @@
+# General
+seed: 1
+
+defaults:
+  - _self_
+  - dataset: rgb-objects-20
+  - model: stam2
+  - scenario: incremental
+
+# Logging
+log: test
+pretrain_log: test
+sleep_log: test
+load_pretrain: False
+load_sleep: False
+plot: False

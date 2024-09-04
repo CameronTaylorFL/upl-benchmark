@@ -1,0 +1,95 @@
+name: rgb-objects
+img_size: 120
+channels: 3
+t0_bs: 128
+
+num_tasks: 16
+num_classes: 40
+stream_bs: 1
+
+t0_size: 10
+t0_factor: 1.0
+
+stream_size: 300
+test_size: 50
+super_size: 100
+
+mean: [0.485, 0.456, 0.406]
+std: [0.229, 0.224, 0.225]
+task_sizes: [10, 2, 2, 2,
+             2, 2, 2, 2,
+             2, 2, 2, 2,
+             2, 2, 2, 2]
+
+task_order: [
+              ['Apple', 'Ball', 'Banana', 'Bell-Pepper', 'Binder', 'Bowl', 'Calculator', 'Camera', 'Cap', 'Cell-Phone'],
+              ['Cereal-Box', 'Coffee-Mug'], 
+              ['Comb', 'Dry-Battery'], 
+              ['Flashlight', 'Food-Bag'], 
+              ['Food-Can', 'Food-Cup'], 
+              ['Food-Jar', 'Garlic'],
+              ['Glue-Stick', 'Greens'], 
+              ['Hand-Towel', 'Instant-Noodles'], 
+              ['Keyboard', 'Kleenex'], 
+              ['Lemon', 'Lightbulb'], 
+              ['Lime', 'Marker'],
+              ['Mushroom', 'Notebook'], 
+              ['Onion', 'Peach'], 
+              ['Pear', 'Pitcher'], 
+              ['Plate', 'Pliers'], 
+              ['Potato', 'Rubber-Eraser'],
+              #['Rubber-Eraser', 'Scissors', 'Shampoo', 'Soda-Can', 'Sponge', 'Stapler', 'Tomato', 'Tooth-Brush', 'Tooth-Paste', 'Water-Bottle']
+            ]
+
+task_classes: {'apple': 'Apple',
+               'ball': 'Ball', 
+               'banana': 'Banana',
+               'bell_pepper': 'Bell-Pepper', 
+               'binder': 'Binder',
+               'bowl': 'Bowl',
+               'calculator': 'Calculator', 
+               'camera': 'Camera',
+               'cap': 'Cap',
+               'cell_phone': 'Cell-Phone',
+               'cereal_box': 'Cereal-Box',
+               'coffee_mug': 'Coffee-Mug',
+               'comb': 'Comb',
+               'dry_battery': 'Dry-Battery',
+               'flashlight': 'Flashlight',
+               'food_bag': 'Food-Bag',
+               'food_box': 'Food-Box',
+               'food_can': 'Food-Can',
+               'food_cup': 'Food-Cup',
+               'food_jar': 'Food-Jar',
+               'garlic': 'Garlic',
+               'glue_stick': 'Glue-Stick',
+               'greens': 'Greens',
+               'hand_towel': 'Hand-Towel',
+               'instant_noodles': 'Instant-Noodles',
+               'keyboard': 'Keyboard',
+               'kleenex': 'Kleenex',
+               'lemon': 'Lemon',
+               'lightbulb': 'Lightbulb',
+               'lime': 'Lime',
+               'marker': 'Marker',
+               'mushroom': 'Mushroom',
+               'notebook': 'Notebook',
+               'onion': 'Onion',
+               'orange': 'Orange',
+               'peach': 'Peach',
+               'pear': 'Pear',
+               'pitcher': 'Pitcher',
+               'plate': 'Plate',
+               'pliers': 'Pliers',
+               'potato': 'Potato',
+               'rubber_eraser': 'Rubber-Eraser',
+               'scissors': 'Scissors',
+               'shampoo': 'Shampoo',
+               'soda_can': 'Soda-Can',
+               'sponge': 'Sponge',
+               'stapler': 'Stapler',
+               'tomato': 'Tomato',
+               'toothbrush': 'Tooth-Brush',
+               'toothpaste': 'Tooth-Paste',
+               'water_bottle': 'Water-Bottle'
+               }

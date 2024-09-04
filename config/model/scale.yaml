@@ -1,0 +1,35 @@
+name: scale
+n_workers: 12
+stream_train: True
+load_pretrain: False
+pretrained: False
+arch: resnet18
+feat_size: 512
+
+bs: 128
+epochs: 1
+lr: 0.01
+momentum: 0.9
+wd: 0.0001
+
+k_scale: 2
+
+init_epochs: 200
+
+
+temp: 0.1
+temp_tsne: 0.1
+current_temp: 0.1
+past_temp: 0.01
+base_temp: 0.07
+distil_power: 0.1
+
+simil: tSNE
+
+mem_max_classes: 10
+mem_samples: 128
+mem_size: 1280
+mem_update_type: reservoir
+mem_cluster_type: kmeans
+mem_max_new_ratio: 0.1
+

@@ -1,0 +1,9 @@
+
+name: incremental
+
+eval_freq: 4
+
+# Evaluation
+tasks: ['classification', 'clustering']
+
+
